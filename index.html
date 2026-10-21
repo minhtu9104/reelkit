@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReelKit Publisher</title>
+<style>
+  :root { --bg: #fafaf8; --text: #1d1d1b; --muted: #5c5c57; --link: #2c4bb8; --line: #e3e2dc; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #161615; --text: #ecebe6; --muted: #a8a7a0; --link: #9aa9ff; --line: #33332f; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 28px; margin: 0 0 8px; } h2 { font-size: 19px; margin: 32px 0 8px; }
+  p, li { color: var(--text); } .muted { color: var(--muted); } a { color: var(--link); }
+  nav { border-top: 1px solid var(--line); margin-top: 40px; padding-top: 16px; display: flex; gap: 20px; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<main>
+  <h1>ReelKit Publisher</h1>
+  <p class="muted">A private desktop tool used by one independent creator to publish his own videos.</p>
+  <p>ReelKit Publisher runs on the creator's own computer. It prepares short educational chalkboard videos made by the creator
+     and sends them to his own social media accounts (TikTok, YouTube, Facebook Page) so he can review and publish them.</p>
+  <h2>What it does on TikTok</h2>
+  <ul>
+    <li>Signs in with Login Kit so the creator can connect <strong>his own</strong> TikTok account.</li>
+    <li>Uploads a video the creator made to <strong>his own TikTok inbox as a draft</strong> (Content Posting API, <code>video.upload</code>).
+        Nothing is published automatically — the creator opens TikTok, edits the caption and posts it himself.</li>
+    <li>Reads basic profile information (<code>user.info.basic</code>) only to show which account is connected.</li>
+  </ul>
+  <p>The app is not offered to the public and has no other users.</p>
+  <nav><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav>
+</main>
+</body>
+</html>
